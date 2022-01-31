@@ -12,10 +12,20 @@
     <div align="center">
         <form method="GET" action="action.html">
             <table>
-            <tr><td><label for="n">Nom : </label></td><td><input id="n" type="text" name="nom"/></td></tr>
-            <tr><td><label for="p">Password : </label></td><td><input id="p" type="password" name="motpasse" /></td></tr>
+            <tr><td><label for="n">Nom : </label></td><td><input id="n" placeholder="taper votre nom" size="30" maxlength="4" type="text" name="nom"/></td></tr>
+            <tr><td><label for="p">Password : </label></td><td><input id="p" placeholder="taper votre mot de passe" size="30" type="password" name="motpasse" /></td></tr>
             <tr><td><label>Status : </label></td><td><input type="radio" name="status" value="Marié"/>Marié <input name="status" value="Célibataire" type="radio" checked/>Célibataire</td></tr>
-            
+            <tr><td colspan="2">
+            <select name="sport">
+                <option value="football">Football</option>
+                <option value="basketball">Basketball</option>
+                <option value="handball">Handball</option>
+            </select>
+            </td></tr>
+            <tr><td colspan=2>
+            <textarea cols="30" rows="5" placeholder="taper votre message ici"></textarea>
+
+            </td=></tr>
             <tr><td><input type="reset" value="Annuler"/></td><td><input type="submit" value="Envoyer"/></td></tr>
             </table>
         </form>
