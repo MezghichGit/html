@@ -11,9 +11,13 @@
     <h1 align="center">Formulaire de contact</h1>
     <div align="center">
         <form method="GET" action="action.html">
-            <label for="n">Nom : </label><input id="n" type="text" name="nom"/>
-            <label for="p">Password : </label><input id="p" type="password" name="motpasse" />
-            <input type="submit" value="Envoyer"/>
+            <table>
+            <tr><td><label for="n">Nom : </label></td><td><input id="n" type="text" name="nom"/></td></tr>
+            <tr><td><label for="p">Password : </label></td><td><input id="p" type="password" name="motpasse" /></td></tr>
+            <tr><td><label>Status : </label></td><td><input type="radio" name="status" value="Marié"/>Marié <input name="status" value="Célibataire" type="radio" checked/>Célibataire</td></tr>
+            
+            <tr><td><input type="reset" value="Annuler"/></td><td><input type="submit" value="Envoyer"/></td></tr>
+            </table>
         </form>
     </div>
 </body>
