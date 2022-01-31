@@ -5,9 +5,17 @@
     <title>Les balises</title>
     <link rel="icon" type="image/x-icon" href="logo.ico" />
 </head>
+
 <body>
     Pour revenir à la page d'acueil, cliquer <a href="tp1.html">ici.</a>
- <h1 align="center">Formulaire de contact</h1>
- 
+    <h1 align="center">Formulaire de contact</h1>
+    <div align="center">
+        <form method="GET" action="action.html">
+            <label for="n">Nom : </label><input id="n" type="text" name="nom"/>
+            <label for="p">Password : </label><input id="p" type="password" name="motpasse" />
+            <input type="submit" value="Envoyer"/>
+        </form>
+    </div>
 </body>
+
 </html>
